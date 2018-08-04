@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.rjha.my_drum.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <ImageButton
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/colorb1"
+            android:id="@+id/imageButton1"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+           />
+
+        <ImageButton
+            android:backgroundTint="@color/colorb2"
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/imageButton2"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageButton1"
+            android:layout_weight="1"
+           />
+
+        <ImageButton
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/colorb3"
+            android:id="@+id/imageButton3"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+           />
+
+        <ImageButton
+            android:backgroundTint="@color/colorb4"
+            android:background="@drawable/roundedbutton"
+
+            android:id="@+id/imageButton4"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <ImageButton
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/colorb5"
+            android:id="@+id/imageButton5"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:backgroundTint="@color/colorb6"
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/imageButton6"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignTop="@+id/imageButton5"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/imageButton3"
+            android:layout_weight="1"
+             />
+
+        <ImageButton
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/colorb7"
+            android:id="@+id/imageButton7"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignStart="@+id/imageButton3"
+            android:layout_alignTop="@+id/imageButton6"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/colorb8"
+            android:id="@+id/imageButton8"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_alignStart="@+id/imageButton4"
+            android:layout_alignTop="@+id/imageButton7"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+          />
+    </LinearLayout>
+</LinearLayout>
